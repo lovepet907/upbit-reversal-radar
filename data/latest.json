@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-10-24T15:36:23.803374+00:00",
+  "generated_at_utc": "2026-10-24T16:36:58.087944+00:00",
   "status": "partial",
   "source": "Upbit public API",
   "market_count": 299,
@@ -32,12 +32,12 @@
   ],
   "top10": [
     {
-      "market": "KRW-NXPC",
-      "name": "넥스페이스",
-      "score": 100,
-      "price": 227.0,
-      "change_24h_pct": 1.34,
-      "turnover_24h_krw": 719516305,
+      "market": "KRW-WLFI",
+      "name": "월드리버티파이낸셜",
+      "score": 92,
+      "price": 71.1,
+      "change_24h_pct": -1.93,
+      "turnover_24h_krw": 855214611,
       "signals": [
         {
           "name": "1시간 RSI 상승(35~60)",
@@ -76,280 +76,72 @@
         },
         {
           "name": "20EMA 위 또는 양봉 아래꼬리",
-          "met": true,
-          "points": 8
-        },
-        {
-          "name": "과열되지 않은 당일 변동률",
-          "met": true,
-          "points": 5
-        }
-      ],
-      "hour1": {
-        "close": 232.0,
-        "rsi": 57.81,
-        "rsi_prev": 52.52,
-        "macd": 1.4742375482027796,
-        "signal": 1.0183824807593835,
-        "hist": 0.4558550674433961,
-        "hist_prev": 0.4470126435082895,
-        "bb_mid": 227.5,
-        "bb_upper": 234.5,
-        "bb_lower": 220.5,
-        "bb_mid_prev": 227.2,
-        "ema20": 228.62932044020576,
-        "turnover_ratio": 1.86,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.4,
-        "body_ratio": 0.6,
-        "last_candle_kst": "2026-10-24T23:00:00",
-        "sample_count": 159,
-        "recent_low": 218.0,
-        "recent_high": 236.0,
-        "last_turnover_krw": 53715896.49652277
-      },
-      "hour4": {
-        "close": 232.0,
-        "rsi": 56.43,
-        "rsi_prev": 49.12,
-        "macd": -0.08531443941538441,
-        "signal": -0.8823595345628652,
-        "hist": 0.7970450951474808,
-        "hist_prev": 0.45705732371102203,
-        "bb_mid": 226.8,
-        "bb_upper": 231.6414873747641,
-        "bb_lower": 221.95851262523593,
-        "bb_mid_prev": 226.55,
-        "ema20": 226.3514503985073,
-        "turnover_ratio": 1.33,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.0,
-        "body_ratio": 0.6,
-        "last_candle_kst": "2026-10-24T17:00:00",
-        "sample_count": 159,
-        "recent_low": 218.0,
-        "recent_high": 236.0,
-        "last_turnover_krw": 203198705.254882
-      },
-      "support_reference": 218.0,
-      "resistance_reference": 236.0,
-      "status": "초기 전환 후보"
-    },
-    {
-      "market": "KRW-MEGA",
-      "name": "메가이더",
-      "score": 88,
-      "price": 60.3,
-      "change_24h_pct": -0.5,
-      "turnover_24h_krw": 2568018172,
-      "signals": [
-        {
-          "name": "1시간 RSI 상승(35~60)",
-          "met": true,
-          "points": 18
-        },
-        {
-          "name": "4시간 RSI 회복",
-          "met": true,
-          "points": 12
-        },
-        {
-          "name": "1시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 15
-        },
-        {
-          "name": "1시간 MACD 골든크로스/상향",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "4시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "1시간 거래대금 증가(1.5배)",
           "met": false,
           "points": 0
         },
         {
-          "name": "볼린저 하단 이탈 후 회복 영역",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "20EMA 위 또는 양봉 아래꼬리",
-          "met": true,
-          "points": 8
-        },
-        {
           "name": "과열되지 않은 당일 변동률",
           "met": true,
           "points": 5
         }
       ],
       "hour1": {
-        "close": 61.3,
-        "rsi": 55.2,
-        "rsi_prev": 54.02,
-        "macd": 0.1572881529536332,
-        "signal": 0.030371706814098544,
-        "hist": 0.12691644613953465,
-        "hist_prev": 0.1118178898219921,
-        "bb_mid": 60.475,
-        "bb_upper": 62.270410816498554,
-        "bb_lower": 58.67958918350145,
-        "bb_mid_prev": 60.53,
-        "ema20": 60.61713280421272,
-        "turnover_ratio": 1.34,
-        "candle_bullish": false,
-        "lower_wick_ratio": 0.786,
-        "body_ratio": 0.071,
-        "last_candle_kst": "2026-10-24T23:00:00",
-        "sample_count": 159,
-        "recent_low": 58.2,
-        "recent_high": 62.6,
-        "last_turnover_krw": 135154963.14148167
-      },
-      "hour4": {
-        "close": 61.7,
-        "rsi": 55.88,
-        "rsi_prev": 43.96,
-        "macd": 0.3893398123300642,
-        "signal": 0.29292285409190444,
-        "hist": 0.09641695823815977,
-        "hist_prev": 0.014718587442295539,
-        "bb_mid": 59.995,
-        "bb_upper": 62.854003322838224,
-        "bb_lower": 57.13599667716177,
-        "bb_mid_prev": 59.76,
-        "ema20": 60.07428721510684,
-        "turnover_ratio": 1.85,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.029,
-        "body_ratio": 0.971,
-        "last_candle_kst": "2026-10-24T17:00:00",
-        "sample_count": 159,
-        "recent_low": 56.7,
-        "recent_high": 63.1,
-        "last_turnover_krw": 492559622.23993236
-      },
-      "support_reference": 58.2,
-      "resistance_reference": 62.6,
-      "status": "초기 전환 후보"
-    },
-    {
-      "market": "KRW-KAVA",
-      "name": "카바",
-      "score": 88,
-      "price": 95.0,
-      "change_24h_pct": 0.85,
-      "turnover_24h_krw": 534620018,
-      "signals": [
-        {
-          "name": "1시간 RSI 상승(35~60)",
-          "met": true,
-          "points": 18
-        },
-        {
-          "name": "4시간 RSI 회복",
-          "met": true,
-          "points": 12
-        },
-        {
-          "name": "1시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 15
-        },
-        {
-          "name": "1시간 MACD 골든크로스/상향",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "4시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "1시간 거래대금 증가(1.5배)",
-          "met": false,
-          "points": 0
-        },
-        {
-          "name": "볼린저 하단 이탈 후 회복 영역",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "20EMA 위 또는 양봉 아래꼬리",
-          "met": true,
-          "points": 8
-        },
-        {
-          "name": "과열되지 않은 당일 변동률",
-          "met": true,
-          "points": 5
-        }
-      ],
-      "hour1": {
-        "close": 94.5,
-        "rsi": 56.99,
-        "rsi_prev": 55.83,
-        "macd": 0.16569430266649476,
-        "signal": 0.10789729651362893,
-        "hist": 0.05779700615286583,
-        "hist_prev": 0.05248269388541417,
-        "bb_mid": 93.92,
-        "bb_upper": 94.95072789813801,
-        "bb_lower": 92.88927210186199,
-        "bb_mid_prev": 93.895,
-        "ema20": 94.06236504186772,
-        "turnover_ratio": 1.19,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.25,
-        "body_ratio": 0.25,
-        "last_candle_kst": "2026-10-24T23:00:00",
-        "sample_count": 159,
-        "recent_low": 91.1,
-        "recent_high": 94.7,
-        "last_turnover_krw": 25682186.13118243
-      },
-      "hour4": {
-        "close": 94.1,
-        "rsi": 51.28,
-        "rsi_prev": 49.1,
-        "macd": -0.07318030145248144,
-        "signal": -0.1300689295595311,
-        "hist": 0.056888628107049644,
-        "hist_prev": 0.040303665627221374,
-        "bb_mid": 93.705,
-        "bb_upper": 94.49866239674058,
-        "bb_lower": 92.91133760325941,
-        "bb_mid_prev": 93.705,
-        "ema20": 93.88982312998417,
-        "turnover_ratio": 0.54,
+        "close": 71.4,
+        "rsi": 46.39,
+        "rsi_prev": 43.45,
+        "macd": -0.2695474649492411,
+        "signal": -0.27100844743543395,
+        "hist": 0.0014609824861928633,
+        "hist_prev": -0.022945180091444806,
+        "bb_mid": 71.67,
+        "bb_upper": 72.78013512691024,
+        "bb_lower": 70.55986487308977,
+        "bb_mid_prev": 71.735,
+        "ema20": 71.52155375908961,
+        "turnover_ratio": 4.42,
         "candle_bullish": true,
         "lower_wick_ratio": 0.0,
+        "body_ratio": 0.75,
+        "last_candle_kst": "2026-10-25T00:00:00",
+        "sample_count": 159,
+        "recent_low": 70.8,
+        "recent_high": 73.4,
+        "last_turnover_krw": 142559027.3110074
+      },
+      "hour4": {
+        "close": 71.4,
+        "rsi": 40.12,
+        "rsi_prev": 39.43,
+        "macd": -0.8393716840706986,
+        "signal": -0.7716681344666377,
+        "hist": -0.06770354960406089,
+        "hist_prev": -0.08019499684239317,
+        "bb_mid": 73.0,
+        "bb_upper": 75.87332559937087,
+        "bb_lower": 70.12667440062913,
+        "bb_mid_prev": 73.075,
+        "ema20": 72.6063666121992,
+        "turnover_ratio": 1.63,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.5,
         "body_ratio": 0.333,
-        "last_candle_kst": "2026-10-24T17:00:00",
+        "last_candle_kst": "2026-10-24T21:00:00",
         "sample_count": 159,
-        "recent_low": 91.1,
-        "recent_high": 95.0,
-        "last_turnover_krw": 31990900.38211504
+        "recent_low": 70.7,
+        "recent_high": 75.9,
+        "last_turnover_krw": 242203551.05382746
       },
-      "support_reference": 91.1,
-      "resistance_reference": 94.7,
+      "support_reference": 70.8,
+      "resistance_reference": 73.4,
       "status": "초기 전환 후보"
     },
     {
-      "market": "KRW-XAUT",
-      "name": "테더골드",
-      "score": 88,
-      "price": 5364000.0,
-      "change_24h_pct": 0.11,
-      "turnover_24h_krw": 317310565,
+      "market": "KRW-HUNT",
+      "name": "헌트",
+      "score": 90,
+      "price": 128.0,
+      "change_24h_pct": -0.78,
+      "turnover_24h_krw": 136701028,
       "signals": [
         {
           "name": "1시간 RSI 상승(35~60)",
@@ -358,8 +150,216 @@
         },
         {
           "name": "4시간 RSI 회복",
+          "met": true,
+          "points": 12
+        },
+        {
+          "name": "1시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 15
+        },
+        {
+          "name": "1시간 MACD 골든크로스/상향",
           "met": false,
           "points": 0
+        },
+        {
+          "name": "4시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "1시간 거래대금 증가(1.5배)",
+          "met": true,
+          "points": 12
+        },
+        {
+          "name": "볼린저 하단 이탈 후 회복 영역",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "20EMA 위 또는 양봉 아래꼬리",
+          "met": true,
+          "points": 8
+        },
+        {
+          "name": "과열되지 않은 당일 변동률",
+          "met": true,
+          "points": 5
+        }
+      ],
+      "hour1": {
+        "close": 128.0,
+        "rsi": 52.21,
+        "rsi_prev": 47.97,
+        "macd": 0.029417662327475114,
+        "signal": 0.07363864859252153,
+        "hist": -0.04422098626504642,
+        "hist_prev": -0.10066108307872391,
+        "bb_mid": 127.8,
+        "bb_upper": 129.75959179422654,
+        "bb_lower": 125.84040820577346,
+        "bb_mid_prev": 127.8,
+        "ema20": 127.52966872905385,
+        "turnover_ratio": 1.52,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.0,
+        "body_ratio": 0.667,
+        "last_candle_kst": "2026-10-25T00:00:00",
+        "sample_count": 159,
+        "recent_low": 125.0,
+        "recent_high": 131.0,
+        "last_turnover_krw": 9055538.64660296
+      },
+      "hour4": {
+        "close": 128.0,
+        "rsi": 51.81,
+        "rsi_prev": 48.73,
+        "macd": 0.028385335240571408,
+        "signal": -0.10253543897401796,
+        "hist": 0.13092077421458936,
+        "hist_prev": 0.11008740295750649,
+        "bb_mid": 127.55,
+        "bb_upper": 130.1170995305987,
+        "bb_lower": 124.98290046940132,
+        "bb_mid_prev": 127.65,
+        "ema20": 127.3740828314917,
+        "turnover_ratio": 2.06,
+        "candle_bullish": false,
+        "lower_wick_ratio": 0.5,
+        "body_ratio": 0.0,
+        "last_candle_kst": "2026-10-24T21:00:00",
+        "sample_count": 159,
+        "recent_low": 125.0,
+        "recent_high": 131.0,
+        "last_turnover_krw": 21631611.9989305
+      },
+      "support_reference": 125.0,
+      "resistance_reference": 131.0,
+      "status": "초기 전환 후보"
+    },
+    {
+      "market": "KRW-USDE",
+      "name": "유에스디이",
+      "score": 88,
+      "price": 1348.0,
+      "change_24h_pct": 0.3,
+      "turnover_24h_krw": 127723202,
+      "signals": [
+        {
+          "name": "1시간 RSI 상승(35~60)",
+          "met": true,
+          "points": 18
+        },
+        {
+          "name": "4시간 RSI 회복",
+          "met": true,
+          "points": 12
+        },
+        {
+          "name": "1시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 15
+        },
+        {
+          "name": "1시간 MACD 골든크로스/상향",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "4시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "1시간 거래대금 증가(1.5배)",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "볼린저 하단 이탈 후 회복 영역",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "20EMA 위 또는 양봉 아래꼬리",
+          "met": true,
+          "points": 8
+        },
+        {
+          "name": "과열되지 않은 당일 변동률",
+          "met": true,
+          "points": 5
+        }
+      ],
+      "hour1": {
+        "close": 1348.0,
+        "rsi": 56.57,
+        "rsi_prev": 54.9,
+        "macd": 1.9854135282444076,
+        "signal": 1.1817272954199824,
+        "hist": 0.8036862328244252,
+        "hist_prev": 0.7041324219377942,
+        "bb_mid": 1340.9,
+        "bb_upper": 1350.1930081243913,
+        "bb_lower": 1331.6069918756089,
+        "bb_mid_prev": 1340.7,
+        "ema20": 1342.1237495588368,
+        "turnover_ratio": 0.25,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.0,
+        "body_ratio": 1.0,
+        "last_candle_kst": "2026-10-25T00:00:00",
+        "sample_count": 160,
+        "recent_low": 1331.0,
+        "recent_high": 1348.0,
+        "last_turnover_krw": 1627220.9546987
+      },
+      "hour4": {
+        "close": 1348.0,
+        "rsi": 56.54,
+        "rsi_prev": 52.59,
+        "macd": -0.39042979255600585,
+        "signal": -1.7922907324993624,
+        "hist": 1.4018609399433566,
+        "hist_prev": 0.9281594782268181,
+        "bb_mid": 1337.95,
+        "bb_upper": 1348.2742433136768,
+        "bb_lower": 1327.6257566863233,
+        "bb_mid_prev": 1337.8,
+        "ema20": 1340.0785277671496,
+        "turnover_ratio": 0.55,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.333,
+        "body_ratio": 0.667,
+        "last_candle_kst": "2026-10-24T21:00:00",
+        "sample_count": 160,
+        "recent_low": 1327.0,
+        "recent_high": 1348.0,
+        "last_turnover_krw": 3924008.16208253
+      },
+      "support_reference": 1331.0,
+      "resistance_reference": 1348.0,
+      "status": "초기 전환 후보"
+    },
+    {
+      "market": "KRW-USDT",
+      "name": "테더",
+      "score": 82,
+      "price": 1346.0,
+      "change_24h_pct": 0.3,
+      "turnover_24h_krw": 136446866058,
+      "signals": [
+        {
+          "name": "1시간 RSI 상승(35~60)",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "4시간 RSI 회복",
+          "met": true,
+          "points": 12
         },
         {
           "name": "1시간 MACD 히스토그램 개선",
@@ -398,62 +398,62 @@
         }
       ],
       "hour1": {
-        "close": 5367000.0,
-        "rsi": 51.43,
-        "rsi_prev": 50.9,
-        "macd": -3472.292939875275,
-        "signal": -6518.014550237813,
-        "hist": 3045.721610362538,
-        "hist_prev": 2864.9333629455514,
-        "bb_mid": 5357500.0,
-        "bb_upper": 5367901.922899157,
-        "bb_lower": 5347098.077100843,
-        "bb_mid_prev": 5355900.0,
-        "ema20": 5361293.696918906,
-        "turnover_ratio": 3.01,
+        "close": 1346.0,
+        "rsi": 66.6,
+        "rsi_prev": 62.15,
+        "macd": 1.7903888656983327,
+        "signal": 1.4312335258613171,
+        "hist": 0.35915533983701553,
+        "hist_prev": 0.2507275444730106,
+        "bb_mid": 1341.5,
+        "bb_upper": 1345.904543109109,
+        "bb_lower": 1337.095456890891,
+        "bb_mid_prev": 1341.1,
+        "ema20": 1341.5127522694365,
+        "turnover_ratio": 1.95,
         "candle_bullish": true,
-        "lower_wick_ratio": 0.692,
-        "body_ratio": 0.077,
-        "last_candle_kst": "2026-10-24T23:00:00",
+        "lower_wick_ratio": 0.2,
+        "body_ratio": 0.2,
+        "last_candle_kst": "2026-10-25T00:00:00",
         "sample_count": 159,
-        "recent_low": 5337000.0,
-        "recent_high": 5372000.0,
-        "last_turnover_krw": 32458625.63877
+        "recent_low": 1336.0,
+        "recent_high": 1349.0,
+        "last_turnover_krw": 10285559885.836948
       },
       "hour4": {
-        "close": 5353000.0,
-        "rsi": 22.44,
-        "rsi_prev": 23.32,
-        "macd": -49317.09630696755,
-        "signal": -48890.610416371754,
-        "hist": -426.48589059579535,
-        "hist_prev": -1569.5298701135835,
-        "bb_mid": 5416650.0,
-        "bb_upper": 5529200.921808753,
-        "bb_lower": 5304099.078191247,
-        "bb_mid_prev": 5423450.0,
-        "ema20": 5410999.185289897,
-        "turnover_ratio": 1.8,
-        "candle_bullish": false,
-        "lower_wick_ratio": 0.174,
-        "body_ratio": 0.217,
-        "last_candle_kst": "2026-10-24T17:00:00",
+        "close": 1346.0,
+        "rsi": 64.06,
+        "rsi_prev": 59.47,
+        "macd": 0.8045021788220765,
+        "signal": -0.6333522743305349,
+        "hist": 1.4378544531526114,
+        "hist_prev": 1.2329282252840108,
+        "bb_mid": 1336.6,
+        "bb_upper": 1345.752048950918,
+        "bb_lower": 1327.447951049082,
+        "bb_mid_prev": 1335.85,
+        "ema20": 1338.9216371233827,
+        "turnover_ratio": 1.51,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.0,
+        "body_ratio": 0.571,
+        "last_candle_kst": "2026-10-24T21:00:00",
         "sample_count": 159,
-        "recent_low": 5328000.0,
-        "recent_high": 5520000.0,
-        "last_turnover_krw": 65667854.60312
+        "recent_low": 1327.0,
+        "recent_high": 1349.0,
+        "last_turnover_krw": 22954935725.932476
       },
-      "support_reference": 5337000.0,
-      "resistance_reference": 5372000.0,
+      "support_reference": 1336.0,
+      "resistance_reference": 1349.0,
       "status": "초기 전환 후보"
     },
     {
       "market": "KRW-USDC",
       "name": "유에스디코인",
       "score": 82,
-      "price": 1348.0,
-      "change_24h_pct": 0.3,
-      "turnover_24h_krw": 1750309201,
+      "price": 1347.0,
+      "change_24h_pct": 0.22,
+      "turnover_24h_krw": 1842752740,
       "signals": [
         {
           "name": "1시간 RSI 상승(35~60)",
@@ -502,62 +502,62 @@
         }
       ],
       "hour1": {
-        "close": 1347.0,
-        "rsi": 63.67,
-        "rsi_prev": 57.81,
-        "macd": 1.5678657308446873,
-        "signal": 1.2307811214167441,
-        "hist": 0.33708460942794316,
-        "hist_prev": 0.15672926071278548,
-        "bb_mid": 1342.25,
-        "bb_upper": 1346.2437451095432,
-        "bb_lower": 1338.2562548904568,
-        "bb_mid_prev": 1341.65,
-        "ema20": 1342.1764666272786,
-        "turnover_ratio": 2.4,
+        "close": 1346.0,
+        "rsi": 60.65,
+        "rsi_prev": 63.67,
+        "macd": 1.6775465678945238,
+        "signal": 1.3201238901176073,
+        "hist": 0.3574226777769165,
+        "hist_prev": 0.33708873765789815,
+        "bb_mid": 1342.65,
+        "bb_upper": 1346.4591993909482,
+        "bb_lower": 1338.840800609052,
+        "bb_mid_prev": 1342.25,
+        "ema20": 1342.5406125351699,
+        "turnover_ratio": 3.33,
         "candle_bullish": true,
         "lower_wick_ratio": 0.0,
-        "body_ratio": 0.75,
-        "last_candle_kst": "2026-10-24T23:00:00",
+        "body_ratio": 0.143,
+        "last_candle_kst": "2026-10-25T00:00:00",
         "sample_count": 159,
-        "recent_low": 1335.0,
-        "recent_high": 1348.0,
-        "last_turnover_krw": 153643063.07245475
+        "recent_low": 1337.0,
+        "recent_high": 1352.0,
+        "last_turnover_krw": 234194234.66463727
       },
       "hour4": {
-        "close": 1343.0,
-        "rsi": 56.63,
-        "rsi_prev": 54.94,
-        "macd": 0.18092331047432708,
-        "signal": -1.0506851596517508,
-        "hist": 1.2316084701260779,
-        "hist_prev": 1.2301581776744488,
-        "bb_mid": 1336.9,
-        "bb_upper": 1345.3356386835853,
-        "bb_lower": 1328.4643613164149,
-        "bb_mid_prev": 1336.45,
-        "ema20": 1339.329500193846,
-        "turnover_ratio": 1.48,
+        "close": 1346.0,
+        "rsi": 61.32,
+        "rsi_prev": 56.63,
+        "macd": 0.6605332057370106,
+        "signal": -0.7084601155805497,
+        "hist": 1.3689933213175602,
+        "hist_prev": 1.2316159217193026,
+        "bb_mid": 1337.7,
+        "bb_upper": 1346.3971259620637,
+        "bb_lower": 1329.0028740379364,
+        "bb_mid_prev": 1336.9,
+        "ema20": 1339.9647858464139,
+        "turnover_ratio": 2.25,
         "candle_bullish": true,
-        "lower_wick_ratio": 0.0,
-        "body_ratio": 0.5,
-        "last_candle_kst": "2026-10-24T17:00:00",
+        "lower_wick_ratio": 0.1,
+        "body_ratio": 0.3,
+        "last_candle_kst": "2026-10-24T21:00:00",
         "sample_count": 159,
         "recent_low": 1328.0,
-        "recent_high": 1346.0,
-        "last_turnover_krw": 287722972.55178255
+        "recent_high": 1352.0,
+        "last_turnover_krw": 440648160.6170363
       },
-      "support_reference": 1335.0,
-      "resistance_reference": 1348.0,
+      "support_reference": 1337.0,
+      "resistance_reference": 1352.0,
       "status": "초기 전환 후보"
     },
     {
-      "market": "KRW-ALT",
-      "name": "알트레이어",
+      "market": "KRW-PUMP",
+      "name": "펌프펀",
       "score": 76,
-      "price": 9.13,
-      "change_24h_pct": -7.78,
-      "turnover_24h_krw": 8365376622,
+      "price": 5.56,
+      "change_24h_pct": -3.47,
+      "turnover_24h_krw": 1718152395,
       "signals": [
         {
           "name": "1시간 RSI 상승(35~60)",
@@ -606,166 +606,270 @@
         }
       ],
       "hour1": {
-        "close": 9.29,
-        "rsi": 38.25,
-        "rsi_prev": 34.62,
-        "macd": -0.33095388962030725,
-        "signal": -0.33734293276201205,
-        "hist": 0.006389043141704798,
-        "hist_prev": -0.006976916771990083,
-        "bb_mid": 9.58,
-        "bb_upper": 10.186992586445667,
-        "bb_lower": 8.973007413554333,
-        "bb_mid_prev": 9.61,
-        "ema20": 9.581590441411155,
-        "turnover_ratio": 0.5,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.686,
-        "body_ratio": 0.314,
-        "last_candle_kst": "2026-10-24T23:00:00",
-        "sample_count": 159,
-        "recent_low": 8.94,
-        "recent_high": 10.2,
-        "last_turnover_krw": 166489512.83412805
-      },
-      "hour4": {
-        "close": 9.05,
-        "rsi": 34.53,
-        "rsi_prev": 36.9,
-        "macd": -0.883757200698307,
-        "signal": -0.5836830502825293,
-        "hist": -0.3000741504157777,
-        "hist_prev": -0.31593736250765636,
-        "bb_mid": 11.6785,
-        "bb_upper": 16.40079298116921,
-        "bb_lower": 6.956207018830788,
-        "bb_mid_prev": 11.886,
-        "ema20": 10.948761564810306,
-        "turnover_ratio": 0.3,
-        "candle_bullish": false,
-        "lower_wick_ratio": 0.09,
-        "body_ratio": 0.701,
-        "last_candle_kst": "2026-10-24T17:00:00",
-        "sample_count": 159,
-        "recent_low": 8.99,
-        "recent_high": 20.7,
-        "last_turnover_krw": 925036222.9508516
-      },
-      "support_reference": 8.94,
-      "resistance_reference": 10.2,
-      "status": "초기 전환 후보"
-    },
-    {
-      "market": "KRW-ZRO",
-      "name": "레이어제로",
-      "score": 76,
-      "price": 2250.0,
-      "change_24h_pct": -1.79,
-      "turnover_24h_krw": 1568801780,
-      "signals": [
-        {
-          "name": "1시간 RSI 상승(35~60)",
-          "met": true,
-          "points": 18
-        },
-        {
-          "name": "4시간 RSI 회복",
-          "met": false,
-          "points": 0
-        },
-        {
-          "name": "1시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 15
-        },
-        {
-          "name": "1시간 MACD 골든크로스/상향",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "4시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "1시간 거래대금 증가(1.5배)",
-          "met": false,
-          "points": 0
-        },
-        {
-          "name": "볼린저 하단 이탈 후 회복 영역",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "20EMA 위 또는 양봉 아래꼬리",
-          "met": true,
-          "points": 8
-        },
-        {
-          "name": "과열되지 않은 당일 변동률",
-          "met": true,
-          "points": 5
-        }
-      ],
-      "hour1": {
-        "close": 2262.0,
-        "rsi": 36.08,
-        "rsi_prev": 35.33,
-        "macd": -30.628645268757282,
-        "signal": -34.10511672242538,
-        "hist": 3.476471453668097,
-        "hist_prev": 3.1066173237211387,
-        "bb_mid": 2279.35,
-        "bb_upper": 2324.086003397711,
-        "bb_lower": 2234.613996602289,
-        "bb_mid_prev": 2283.7,
-        "ema20": 2290.687704746456,
+        "close": 5.62,
+        "rsi": 35.05,
+        "rsi_prev": 28.04,
+        "macd": -0.11346987847504142,
+        "signal": -0.11999297869064399,
+        "hist": 0.0065231002156025675,
+        "hist_prev": 0.004134088496928562,
+        "bb_mid": 5.712,
+        "bb_upper": 5.9246593520163175,
+        "bb_lower": 5.499340647983682,
+        "bb_mid_prev": 5.728,
+        "ema20": 5.7345721973184265,
         "turnover_ratio": 1.2,
         "candle_bullish": true,
-        "lower_wick_ratio": 0.891,
-        "body_ratio": 0.109,
-        "last_candle_kst": "2026-10-24T23:00:00",
+        "lower_wick_ratio": 0.4,
+        "body_ratio": 0.6,
+        "last_candle_kst": "2026-10-25T00:00:00",
         "sample_count": 159,
-        "recent_low": 2207.0,
-        "recent_high": 2357.0,
-        "last_turnover_krw": 60459504.68234218
+        "recent_low": 5.45,
+        "recent_high": 6.04,
+        "last_turnover_krw": 91534064.58916119
       },
       "hour4": {
-        "close": 2264.0,
-        "rsi": 31.89,
-        "rsi_prev": 32.37,
-        "macd": -84.47152044390032,
-        "signal": -66.31827348464353,
-        "hist": -18.15324695925679,
-        "hist_prev": -19.995605790001903,
-        "bb_mid": 2458.55,
-        "bb_upper": 2768.7818326671204,
-        "bb_lower": 2148.31816733288,
-        "bb_mid_prev": 2481.25,
-        "ema20": 2411.299484664514,
-        "turnover_ratio": 0.61,
+        "close": 5.62,
+        "rsi": 34.14,
+        "rsi_prev": 36.08,
+        "macd": -0.14635483710119424,
+        "signal": -0.06676079638096671,
+        "hist": -0.07959404072022752,
+        "hist_prev": -0.08197532364452909,
+        "bb_mid": 6.1825,
+        "bb_upper": 6.89627517468738,
+        "bb_lower": 5.46872482531262,
+        "bb_mid_prev": 6.226,
+        "ema20": 6.011556669356856,
+        "turnover_ratio": 0.91,
         "candle_bullish": false,
-        "lower_wick_ratio": 0.395,
-        "body_ratio": 0.023,
-        "last_candle_kst": "2026-10-24T17:00:00",
+        "lower_wick_ratio": 0.654,
+        "body_ratio": 0.269,
+        "last_candle_kst": "2026-10-24T21:00:00",
         "sample_count": 159,
-        "recent_low": 2236.0,
-        "recent_high": 2838.0,
-        "last_turnover_krw": 138124711.94624275
+        "recent_low": 5.45,
+        "recent_high": 6.93,
+        "last_turnover_krw": 353108078.3604455
       },
-      "support_reference": 2207.0,
-      "resistance_reference": 2357.0,
+      "support_reference": 5.45,
+      "resistance_reference": 6.04,
       "status": "초기 전환 후보"
     },
     {
-      "market": "KRW-HOLO",
-      "name": "홀로월드에이아이",
-      "score": 73,
-      "price": 77.5,
-      "change_24h_pct": -1.02,
-      "turnover_24h_krw": 1731874649,
+      "market": "KRW-CAP",
+      "name": "캡",
+      "score": 72,
+      "price": 100.0,
+      "change_24h_pct": 3.84,
+      "turnover_24h_krw": 8487072467,
+      "signals": [
+        {
+          "name": "1시간 RSI 상승(35~60)",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "4시간 RSI 회복",
+          "met": true,
+          "points": 12
+        },
+        {
+          "name": "1시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 15
+        },
+        {
+          "name": "1시간 MACD 골든크로스/상향",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "4시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "1시간 거래대금 증가(1.5배)",
+          "met": true,
+          "points": 12
+        },
+        {
+          "name": "볼린저 하단 이탈 후 회복 영역",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "20EMA 위 또는 양봉 아래꼬리",
+          "met": true,
+          "points": 8
+        },
+        {
+          "name": "과열되지 않은 당일 변동률",
+          "met": true,
+          "points": 5
+        }
+      ],
+      "hour1": {
+        "close": 101.0,
+        "rsi": 64.57,
+        "rsi_prev": 58.93,
+        "macd": 1.2902155996129778,
+        "signal": 0.4646412259282323,
+        "hist": 0.8255743736847455,
+        "hist_prev": 0.6704699056115586,
+        "bb_mid": 94.81,
+        "bb_upper": 100.47635685427595,
+        "bb_lower": 89.14364314572406,
+        "bb_mid_prev": 94.48,
+        "ema20": 95.53206397464109,
+        "turnover_ratio": 1.99,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.073,
+        "body_ratio": 0.564,
+        "last_candle_kst": "2026-10-25T00:00:00",
+        "sample_count": 159,
+        "recent_low": 91.8,
+        "recent_high": 104.0,
+        "last_turnover_krw": 700792364.7180065
+      },
+      "hour4": {
+        "close": 101.0,
+        "rsi": 64.42,
+        "rsi_prev": 49.93,
+        "macd": 0.5453152655519915,
+        "signal": -0.249994993064948,
+        "hist": 0.7953102586169395,
+        "hist_prev": 0.38232976364354004,
+        "bb_mid": 93.14,
+        "bb_upper": 97.89621698411668,
+        "bb_lower": 88.38378301588332,
+        "bb_mid_prev": 92.57,
+        "ema20": 93.96227441706243,
+        "turnover_ratio": 4.09,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.0,
+        "body_ratio": 0.709,
+        "last_candle_kst": "2026-10-24T21:00:00",
+        "sample_count": 159,
+        "recent_low": 89.0,
+        "recent_high": 104.0,
+        "last_turnover_krw": 3423862772.0541487
+      },
+      "support_reference": 91.8,
+      "resistance_reference": 104.0,
+      "status": "초기 전환 후보"
+    },
+    {
+      "market": "KRW-HOME",
+      "name": "디파이앱",
+      "score": 70,
+      "price": 6.94,
+      "change_24h_pct": 0.87,
+      "turnover_24h_krw": 1835218082,
+      "signals": [
+        {
+          "name": "1시간 RSI 상승(35~60)",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "4시간 RSI 회복",
+          "met": true,
+          "points": 12
+        },
+        {
+          "name": "1시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 15
+        },
+        {
+          "name": "1시간 MACD 골든크로스/상향",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "4시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "1시간 거래대금 증가(1.5배)",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "볼린저 하단 이탈 후 회복 영역",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "20EMA 위 또는 양봉 아래꼬리",
+          "met": true,
+          "points": 8
+        },
+        {
+          "name": "과열되지 않은 당일 변동률",
+          "met": true,
+          "points": 5
+        }
+      ],
+      "hour1": {
+        "close": 7.02,
+        "rsi": 64.29,
+        "rsi_prev": 63.65,
+        "macd": 0.056799452810326834,
+        "signal": 0.03887270306024177,
+        "hist": 0.017926749750085062,
+        "hist_prev": 0.017550281434639776,
+        "bb_mid": 6.8614999999999995,
+        "bb_upper": 7.055538655942572,
+        "bb_lower": 6.667461344057427,
+        "bb_mid_prev": 6.8515,
+        "ema20": 6.890592157842568,
+        "turnover_ratio": 1.15,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.846,
+        "body_ratio": 0.154,
+        "last_candle_kst": "2026-10-25T00:00:00",
+        "sample_count": 159,
+        "recent_low": 6.61,
+        "recent_high": 7.25,
+        "last_turnover_krw": 92213141.9606976
+      },
+      "hour4": {
+        "close": 7.02,
+        "rsi": 63.4,
+        "rsi_prev": 59.41,
+        "macd": 0.05879693605131475,
+        "signal": 0.034080673778576744,
+        "hist": 0.02471626227273801,
+        "hist_prev": 0.015962120437990265,
+        "bb_mid": 6.7875,
+        "bb_upper": 7.022861424196914,
+        "bb_lower": 6.5521385758030855,
+        "bb_mid_prev": 6.776,
+        "ema20": 6.784480642039813,
+        "turnover_ratio": 3.16,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.36,
+        "body_ratio": 0.32,
+        "last_candle_kst": "2026-10-24T21:00:00",
+        "sample_count": 159,
+        "recent_low": 6.55,
+        "recent_high": 7.25,
+        "last_turnover_krw": 291770094.52604204
+      },
+      "support_reference": 6.61,
+      "resistance_reference": 7.25,
+      "status": "초기 전환 후보"
+    },
+    {
+      "market": "KRW-ARX",
+      "name": "아르키움",
+      "score": 70,
+      "price": 270.0,
+      "change_24h_pct": -3.91,
+      "turnover_24h_krw": 948397144,
       "signals": [
         {
           "name": "1시간 RSI 상승(35~60)",
@@ -774,18 +878,18 @@
         },
         {
           "name": "4시간 RSI 회복",
-          "met": true,
-          "points": 12
-        },
-        {
-          "name": "1시간 MACD 히스토그램 개선",
           "met": false,
           "points": 0
         },
         {
-          "name": "1시간 MACD 골든크로스/상향",
+          "name": "1시간 MACD 히스토그램 개선",
           "met": true,
-          "points": 10
+          "points": 15
+        },
+        {
+          "name": "1시간 MACD 골든크로스/상향",
+          "met": false,
+          "points": 0
         },
         {
           "name": "4시간 MACD 히스토그램 개선",
@@ -794,8 +898,8 @@
         },
         {
           "name": "1시간 거래대금 증가(1.5배)",
-          "met": false,
-          "points": 0
+          "met": true,
+          "points": 12
         },
         {
           "name": "볼린저 하단 이탈 후 회복 영역",
@@ -804,8 +908,8 @@
         },
         {
           "name": "20EMA 위 또는 양봉 아래꼬리",
-          "met": true,
-          "points": 8
+          "met": false,
+          "points": 0
         },
         {
           "name": "과열되지 않은 당일 변동률",
@@ -814,265 +918,161 @@
         }
       ],
       "hour1": {
-        "close": 78.9,
-        "rsi": 53.55,
-        "rsi_prev": 51.47,
-        "macd": 0.5335264499989449,
-        "signal": 0.5075578200894642,
-        "hist": 0.02596862990948079,
-        "hist_prev": 0.06992774745175523,
-        "bb_mid": 78.415,
-        "bb_upper": 80.44110463698202,
-        "bb_lower": 76.388895363018,
-        "bb_mid_prev": 78.4,
-        "ema20": 78.52216766957798,
-        "turnover_ratio": 0.73,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.75,
-        "body_ratio": 0.2,
-        "last_candle_kst": "2026-10-24T23:00:00",
-        "sample_count": 159,
-        "recent_low": 76.5,
-        "recent_high": 82.7,
-        "last_turnover_krw": 57515229.15253401
-      },
-      "hour4": {
-        "close": 80.3,
-        "rsi": 62.48,
-        "rsi_prev": 48.59,
-        "macd": 0.3162934014360985,
-        "signal": 0.005083830294025156,
-        "hist": 0.31120957114207337,
-        "hist_prev": 0.15835130131478586,
-        "bb_mid": 77.49,
-        "bb_upper": 80.42795847485971,
-        "bb_lower": 74.55204152514028,
-        "bb_mid_prev": 77.38,
-        "ema20": 77.5217294360161,
-        "turnover_ratio": 13.6,
+        "close": 272.0,
+        "rsi": 40.59,
+        "rsi_prev": 38.62,
+        "macd": -2.928739518111854,
+        "signal": -2.788033008129516,
+        "hist": -0.1407065099823379,
+        "hist_prev": -0.17475214382467374,
+        "bb_mid": 276.65,
+        "bb_upper": 284.87860863086826,
+        "bb_lower": 268.4213913691317,
+        "bb_mid_prev": 277.1,
+        "ema20": 276.0101337602537,
+        "turnover_ratio": 2.24,
         "candle_bullish": true,
         "lower_wick_ratio": 0.0,
-        "body_ratio": 0.571,
-        "last_candle_kst": "2026-10-24T17:00:00",
+        "body_ratio": 0.167,
+        "last_candle_kst": "2026-10-25T00:00:00",
         "sample_count": 159,
-        "recent_low": 74.9,
-        "recent_high": 82.7,
-        "last_turnover_krw": 933785401.2985713
-      },
-      "support_reference": 76.5,
-      "resistance_reference": 82.7,
-      "status": "초기 전환 후보"
-    },
-    {
-      "market": "KRW-ZBT",
-      "name": "제로베이스",
-      "score": 72,
-      "price": 101.0,
-      "change_24h_pct": 5.98,
-      "turnover_24h_krw": 3437830674,
-      "signals": [
-        {
-          "name": "1시간 RSI 상승(35~60)",
-          "met": false,
-          "points": 0
-        },
-        {
-          "name": "4시간 RSI 회복",
-          "met": true,
-          "points": 12
-        },
-        {
-          "name": "1시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 15
-        },
-        {
-          "name": "1시간 MACD 골든크로스/상향",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "4시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "1시간 거래대금 증가(1.5배)",
-          "met": true,
-          "points": 12
-        },
-        {
-          "name": "볼린저 하단 이탈 후 회복 영역",
-          "met": false,
-          "points": 0
-        },
-        {
-          "name": "20EMA 위 또는 양봉 아래꼬리",
-          "met": true,
-          "points": 8
-        },
-        {
-          "name": "과열되지 않은 당일 변동률",
-          "met": true,
-          "points": 5
-        }
-      ],
-      "hour1": {
-        "close": 102.0,
-        "rsi": 81.37,
-        "rsi_prev": 76.3,
-        "macd": 1.5589966788465972,
-        "signal": 1.1169836241901427,
-        "hist": 0.44201305465645446,
-        "hist_prev": 0.2892449832410169,
-        "bb_mid": 96.73,
-        "bb_upper": 100.60458384862169,
-        "bb_lower": 92.85541615137832,
-        "bb_mid_prev": 96.33,
-        "ema20": 97.1755728993862,
-        "turnover_ratio": 3.67,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.459,
-        "body_ratio": 0.541,
-        "last_candle_kst": "2026-10-24T23:00:00",
-        "sample_count": 159,
-        "recent_low": 93.5,
-        "recent_high": 102.0,
-        "last_turnover_krw": 419821846.4817807
+        "recent_low": 268.0,
+        "recent_high": 287.0,
+        "last_turnover_krw": 83640641.1811936
       },
       "hour4": {
-        "close": 97.9,
-        "rsi": 62.25,
-        "rsi_prev": 56.41,
-        "macd": 0.6123241239715611,
-        "signal": -0.02162742113201191,
-        "hist": 0.633951545103573,
-        "hist_prev": 0.5395617720615631,
-        "bb_mid": 94.095,
-        "bb_upper": 98.17052450612188,
-        "bb_lower": 90.01947549387812,
-        "bb_mid_prev": 93.91,
-        "ema20": 94.38603903386625,
-        "turnover_ratio": 5.67,
-        "candle_bullish": true,
-        "lower_wick_ratio": 0.067,
-        "body_ratio": 0.633,
-        "last_candle_kst": "2026-10-24T17:00:00",
-        "sample_count": 159,
-        "recent_low": 90.4,
-        "recent_high": 98.8,
-        "last_turnover_krw": 718070898.7513243
-      },
-      "support_reference": 93.5,
-      "resistance_reference": 102.0,
-      "status": "초기 전환 후보"
-    },
-    {
-      "market": "KRW-USDT",
-      "name": "테더",
-      "score": 70,
-      "price": 1346.0,
-      "change_24h_pct": 0.3,
-      "turnover_24h_krw": 137650837055,
-      "signals": [
-        {
-          "name": "1시간 RSI 상승(35~60)",
-          "met": false,
-          "points": 0
-        },
-        {
-          "name": "4시간 RSI 회복",
-          "met": true,
-          "points": 12
-        },
-        {
-          "name": "1시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 15
-        },
-        {
-          "name": "1시간 MACD 골든크로스/상향",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "4시간 MACD 히스토그램 개선",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "1시간 거래대금 증가(1.5배)",
-          "met": false,
-          "points": 0
-        },
-        {
-          "name": "볼린저 하단 이탈 후 회복 영역",
-          "met": true,
-          "points": 10
-        },
-        {
-          "name": "20EMA 위 또는 양봉 아래꼬리",
-          "met": true,
-          "points": 8
-        },
-        {
-          "name": "과열되지 않은 당일 변동률",
-          "met": true,
-          "points": 5
-        }
-      ],
-      "hour1": {
-        "close": 1344.0,
-        "rsi": 62.15,
-        "rsi_prev": 62.15,
-        "macd": 1.5921804009851712,
-        "signal": 1.341456699141571,
-        "hist": 0.25072370184360016,
-        "hist_prev": 0.2408862762441475,
-        "bb_mid": 1341.1,
-        "bb_upper": 1345.2424630354415,
-        "bb_lower": 1336.9575369645584,
-        "bb_mid_prev": 1340.65,
-        "ema20": 1341.0404103695944,
-        "turnover_ratio": 1.3,
+        "close": 272.0,
+        "rsi": 30.44,
+        "rsi_prev": 32.31,
+        "macd": -9.337083115511518,
+        "signal": -8.341703219831471,
+        "hist": -0.9953798956800473,
+        "hist_prev": -1.0809296315769927,
+        "bb_mid": 290.4,
+        "bb_upper": 320.58211390873737,
+        "bb_lower": 260.2178860912626,
+        "bb_mid_prev": 292.15,
+        "ema20": 286.6810040990788,
+        "turnover_ratio": 1.59,
         "candle_bullish": false,
-        "lower_wick_ratio": 0.5,
-        "body_ratio": 0.0,
-        "last_candle_kst": "2026-10-24T23:00:00",
+        "lower_wick_ratio": 0.4,
+        "body_ratio": 0.4,
+        "last_candle_kst": "2026-10-24T21:00:00",
         "sample_count": 159,
-        "recent_low": 1334.0,
-        "recent_high": 1346.0,
-        "last_turnover_krw": 6699650808.445983
+        "recent_low": 268.0,
+        "recent_high": 326.0,
+        "last_turnover_krw": 201258240.90051007
       },
-      "hour4": {
-        "close": 1343.0,
-        "rsi": 59.47,
-        "rsi_prev": 51.88,
-        "macd": 0.2401260757565069,
-        "signal": -0.9927956845517749,
-        "hist": 1.2329217603082818,
-        "hist_prev": 1.12274863180802,
-        "bb_mid": 1335.85,
-        "bb_upper": 1344.2231714421716,
-        "bb_lower": 1327.4768285578282,
-        "bb_mid_prev": 1335.25,
-        "ema20": 1338.176546349246,
-        "turnover_ratio": 1.52,
+      "support_reference": 268.0,
+      "resistance_reference": 287.0,
+      "status": "초기 전환 후보"
+    },
+    {
+      "market": "KRW-KAVA",
+      "name": "카바",
+      "score": 70,
+      "price": 94.9,
+      "change_24h_pct": 0.74,
+      "turnover_24h_krw": 513921562,
+      "signals": [
+        {
+          "name": "1시간 RSI 상승(35~60)",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "4시간 RSI 회복",
+          "met": true,
+          "points": 12
+        },
+        {
+          "name": "1시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 15
+        },
+        {
+          "name": "1시간 MACD 골든크로스/상향",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "4시간 MACD 히스토그램 개선",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "1시간 거래대금 증가(1.5배)",
+          "met": false,
+          "points": 0
+        },
+        {
+          "name": "볼린저 하단 이탈 후 회복 영역",
+          "met": true,
+          "points": 10
+        },
+        {
+          "name": "20EMA 위 또는 양봉 아래꼬리",
+          "met": true,
+          "points": 8
+        },
+        {
+          "name": "과열되지 않은 당일 변동률",
+          "met": true,
+          "points": 5
+        }
+      ],
+      "hour1": {
+        "close": 94.9,
+        "rsi": 61.33,
+        "rsi_prev": 56.99,
+        "macd": 0.21119663550160794,
+        "signal": 0.1285539642708932,
+        "hist": 0.08264267123071475,
+        "hist_prev": 0.05779828617007182,
+        "bb_mid": 93.975,
+        "bb_upper": 95.08832834330218,
+        "bb_lower": 92.86167165669781,
+        "bb_mid_prev": 93.92,
+        "ema20": 94.14213980259674,
+        "turnover_ratio": 1.49,
         "candle_bullish": true,
         "lower_wick_ratio": 0.2,
         "body_ratio": 0.6,
-        "last_candle_kst": "2026-10-24T17:00:00",
+        "last_candle_kst": "2026-10-25T00:00:00",
         "sample_count": 159,
-        "recent_low": 1327.0,
-        "recent_high": 1344.0,
-        "last_turnover_krw": 22584058505.189285
+        "recent_low": 91.1,
+        "recent_high": 95.0,
+        "last_turnover_krw": 33307799.5983511
       },
-      "support_reference": 1334.0,
-      "resistance_reference": 1346.0,
+      "hour4": {
+        "close": 94.9,
+        "rsi": 56.63,
+        "rsi_prev": 51.28,
+        "macd": 0.015607089541759933,
+        "signal": -0.1009348291999816,
+        "hist": 0.11654191874174154,
+        "hist_prev": 0.05688906949095901,
+        "bb_mid": 93.785,
+        "bb_upper": 94.71079695398073,
+        "bb_lower": 92.85920304601926,
+        "bb_mid_prev": 93.705,
+        "ema20": 93.98603046326609,
+        "turnover_ratio": 1.14,
+        "candle_bullish": true,
+        "lower_wick_ratio": 0.444,
+        "body_ratio": 0.444,
+        "last_candle_kst": "2026-10-24T21:00:00",
+        "sample_count": 159,
+        "recent_low": 91.1,
+        "recent_high": 95.0,
+        "last_turnover_krw": 66189050.53632584
+      },
+      "support_reference": 91.1,
+      "resistance_reference": 95.0,
       "status": "초기 전환 후보"
     }
   ],
   "method": "Closed 1h and 4h candles; RSI14, MACD12/26/9, BB20/2, volume turnover ratio. Score is a heuristic, not a probability.",
   "minimum_24h_turnover_krw": 100000000,
-  "runtime_seconds": 247
+  "runtime_seconds": 249
 }
