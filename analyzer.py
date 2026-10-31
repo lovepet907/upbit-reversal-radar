@@ -12,6 +12,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from probability import calculate
+from signals import evaluate
 
 API = 'https://api.upbit.com/v1'
 OUTPUT = Path('data/latest.json')
@@ -104,7 +106,7 @@ def indicators(candles):
     return {'close':close[-1], 'rsi':round(rr[-1],2),'rsi_prev':round(rr[-2],2),'rsi_3ago':round(rr[-4],2),
       'macd':macd[-1],'signal':signal[-1],'hist':hist[-1],'hist_prev':hist[-2],
       'macd_cross_bars_ago':recent_cross,'bb_mid':mean,'bb_upper':mean+2*std,'bb_lower':mean-2*std,
-      'ema20':ema(close,20)[-1], 'turnover_ratio':round(turnover[-1]/prior_turnover,2) if prior_turnover else None,
+      'ema20':ema(close,20)[-1], 'ema50':ema(close,50)[-1], 'turnover_ratio':round(turnover[-1]/prior_turnover,2) if prior_turnover else None,
       'candle_bullish':close[-1]>float(last['opening_price']),'lower_wick_ratio':round(wick/range_,3) if range_ else 0,
       'last_candle_kst':last['candle_date_time_kst'],'sample_count':len(close),
       'recent_low':min(float(c['low_price']) for c in candles[-20:]),
@@ -167,13 +169,14 @@ def price_plan(i1,price):
 
 
 def analyze_market(item,ticker):
-    market=item['market'];i1=indicators(closed_candles(market,60));i4=indicators(closed_candles(market,240))
+    market=item['market'];c1=closed_candles(market,60);c4=closed_candles(market,240);i1=indicators(c1);i4=indicators(c4)
     change=float(ticker.get('signed_change_rate',0))*100
     pts,checks,warnings,penalty=score(i1,i4,change)
+    extended=evaluate(c1,c4,i1,i4,change)
     strength='높음' if pts>=80 and not warnings else '보통' if pts>=60 else '낮음'
     return {'market':market,'name':item.get('korean_name',market),'score':pts,'price':ticker['trade_price'],
       'change_24h_pct':round(change,2),'turnover_24h_krw':round(ticker.get('acc_trade_price_24h',0)),
-      'signals':checks,'hour1':i1,'hour4':i4,'warnings':warnings,'overheat_penalty':penalty,
+      'signals':checks,'extended_analysis':extended,'hour1':i1,'hour4':i4,'warnings':warnings,'overheat_penalty':penalty,
       'signal_consistency':strength,'trade_plan':price_plan(i1,float(ticker['trade_price'])),
       'support_reference':i1['recent_low'],'resistance_reference':i1['recent_high'],
       'status':'초기 전환 후보' if pts>=75 and not warnings else '관찰 후보' if pts>=55 else '약한 신호'}
@@ -203,10 +206,10 @@ def main():
       'top10':results[:10],
       'markets':[{ 'market':r['market'],'name':r['name'],'score':r['score'],'price':r['price'],
         'change_24h_pct':r['change_24h_pct'],'status':r['status'],'signal_consistency':r['signal_consistency'],
-        'warnings':r['warnings'],'hour1':{'rsi':r['hour1']['rsi'],'turnover_ratio':r['hour1']['turnover_ratio'],
+        'warnings':r['warnings'],'extended_analysis':r['extended_analysis'],'hour1':{'rsi':r['hour1']['rsi'],'turnover_ratio':r['hour1']['turnover_ratio'],
         'macd_cross_bars_ago':r['hour1']['macd_cross_bars_ago']},
         'hour4':{'rsi':r['hour4']['rsi']},'trade_plan':r['trade_plan']} for r in results],
-      'method':'Closed 1h/4h candles; RSI14, MACD12/26/9, BB20/2, turnover ratio, ATR14. Rule-based score, NOT probability. Price plan illustrative, NOT forecast.',
+      'method':'V4: explainable evidence and risk flags added, not independent statistical predictions. Closed 1h/4h candles; RSI14, MACD12/26/9, BB20/2, turnover ratio, ATR14. Rule-based score, NOT probability. Price plan illustrative, NOT forecast.',
       'minimum_24h_turnover_krw':MIN_24H_KRW,
       'runtime_seconds':round((dt.datetime.now(dt.timezone.utc)-started).total_seconds())}
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
@@ -227,6 +230,20 @@ def main():
     temp_history=HISTORY.with_suffix('.tmp')
     temp_history.write_text(json.dumps({'schema_version':1,'snapshots':snapshots},ensure_ascii=False,separators=(',',':'),allow_nan=False),encoding='utf-8')
     temp_history.replace(HISTORY)
-    print(f'Wrote {OUTPUT} analyzed={len(results)} errors={len(errors)}')
+    # Derive probabilities only from completed historical observations, with a
+    # strictly later outcome and time-ordered holdout evaluation.
+    calibration, probabilities = calculate(snapshots, results)
+    payload['probability_backtest'] = calibration
+    for item in payload['markets']:
+        item.update(probabilities.get(item['market'], {}))
+    for item in payload['top10']:
+        item.update(probabilities.get(item['market'], {}))
+    # Probability series is written per snapshot. Old snapshots stay unmodified.
+    snapshots[-1]['probabilities_1h'] = {m: v['probability_1h_pct'] for m, v in probabilities.items()}
+    temp_history.write_text(json.dumps({'schema_version':2,'snapshots':snapshots},ensure_ascii=False,separators=(',',':'),allow_nan=False),encoding='utf-8')
+    temp_history.replace(HISTORY)
+    temp.write_text(json.dumps(payload,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf-8')
+    temp.replace(OUTPUT)
+    print(f'Wrote {OUTPUT} analyzed={len(results)} errors={len(errors)} probability={calibration["status"]}')
 
 if __name__=='__main__':main()
